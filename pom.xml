@@ -6,11 +6,11 @@
 
     <parent>
         <groupId>beynd.architecture</groupId>
-        <artifactId>tools-parent</artifactId>
-        <version>2.1.1</version>
+        <artifactId>beynd-tools-parent</artifactId>
+        <version>3.0.0</version>
     </parent>
 
-    <artifactId>wiremock</artifactId>
+    <artifactId>beynd-wiremock</artifactId>
     <version>1.0.0-SNAPSHOT</version>
     <name>wiremock</name>
 
