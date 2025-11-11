@@ -1,0 +1,12 @@
+#!/bin/sh
+# Run Commitizen interactively before Git opens the editor
+if [ -z "$2" ]; then
+  exec < /dev/tty
+  npx cz --hook || true
+
+  # If Commitizen wrote a message, finish the commit and abort default editor
+  if [ -s "$1" ]; then
+    git commit -F "$1" --no-verify
+    exit 1
+  fi
+fi
